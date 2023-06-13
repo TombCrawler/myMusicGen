@@ -6,4 +6,4 @@ Referred to this
 https://www.tensorflow.org/tutorials/audio/music_generation
 <br>
 Not completed yet but for now, just simply run `python3 synthAi.py`
-It generates you a piano roll but no sound! haha
+It generates you a piano roll and an example MIDI file. 
