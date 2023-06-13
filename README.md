@@ -2,7 +2,8 @@
 
 [![N|Solid](https://www.steinway.com/.imaging/mte/steinway-us-theme/Medium-Rectangle/dam/spirio/landscape/PB_STEINWAY_SON_030215_17_226_CMJN300_fma.jpg/jcr:content/PB_STEINWAY_SON_030215_17_226_CMJN300_fma.jpg)](https://nodesource.com/products/nsolid)
 
-I know this is a raw model but you will see more updates:)
+Referred to this
+https://www.tensorflow.org/tutorials/audio/music_generation
 <br>
-But for now, just simply run `python3 main.py`
-It generates you a new melody but no sound! haha
+Not completed yet but for now, just simply run `python3 synthAi.py`
+It generates you a piano roll but no sound! haha
