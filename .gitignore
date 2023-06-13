@@ -1,1 +1,13 @@
 venv/
+input_seqs.npy
+llvm.sh
+llvm.sh.1
+main.py
+max_val.npy
+output.mid
+path_to_output_midi_file.mid
+piano.mid
+test.py
+trained_model.h5
+training.py
+main.py
