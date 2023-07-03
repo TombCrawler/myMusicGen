@@ -11,3 +11,6 @@ test.py
 trained_model.h5
 training.py
 main.py
+my_dir
+training_checkpoints
+data

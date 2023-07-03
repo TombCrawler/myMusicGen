@@ -9,6 +9,7 @@ import pandas as pd
 import pretty_midi
 import seaborn as sns
 import tensorflow as tf
+import keras_tuner as kt
 
 from IPython import display
 from matplotlib import pyplot as plt
@@ -21,7 +22,7 @@ np.random.seed(seed)
 # Sampling rate for audio playback
 _SAMPLING_RATE = 16000
 
-# Download the maestro dataset
+# Download the maestro dataset of 1282 files
 data_dir = pathlib.Path('data/maestro-v2.0.0')
 if not data_dir.exists():
   tf.keras.utils.get_file(
@@ -305,7 +306,7 @@ callbacks = [
         restore_best_weights=True),
 ]
 
-epochs = 30
+epochs = 50
 
 history = model.fit(
     train_ds,
@@ -314,7 +315,7 @@ history = model.fit(
 )
 
 plt.plot(history.epoch, history.history['loss'], label='total loss')
-# plt.show()
+plt.show()
 
 # Generate notes
 # provide a starting sequence of notes. The function below generates one note from a sequence of notes.
