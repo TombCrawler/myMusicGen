@@ -1,7 +1,6 @@
 import collections
 import datetime
 import fluidsynth
-# from mingus.midi import fluidsynth
 import glob
 import numpy as np
 import pathlib
@@ -31,7 +30,7 @@ if not data_dir.exists():
       extract=True,
       cache_dir='.', cache_subdir='data',
   )
-
+print(data_dir)
 # The data above contains 1200+ Midi files
 filenames = glob.glob(str(data_dir/'**/*.mid*'))
 print('Number of files:', len(filenames))
@@ -306,7 +305,7 @@ callbacks = [
         restore_best_weights=True),
 ]
 
-epochs = 50
+epochs = 5
 
 history = model.fit(
     train_ds,
