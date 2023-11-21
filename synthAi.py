@@ -42,14 +42,14 @@ print(sample_file)
 # generate a prettyMIDI object for the sample MIDI file
 pm = pretty_midi.PrettyMIDI(sample_file)
 
-# # Play the sample file
-# def display_audio(pm: pretty_midi.PrettyMIDI, seconds=30):
-#   waveform = pm.fluidsynth(fs=_SAMPLING_RATE)
-#   # Take a sample of the generated waveform to mitigate kernel resets
-#   waveform_short = waveform[:seconds*_SAMPLING_RATE]
-#   return display.Audio(waveform_short, rate=_SAMPLING_RATE)
+# Play the sample file
+def display_audio(pm: pretty_midi.PrettyMIDI, seconds=30):
+  waveform = pm.fluidsynth(fs=_SAMPLING_RATE)
+  # Take a sample of the generated waveform to mitigate kernel resets
+  waveform_short = waveform[:seconds*_SAMPLING_RATE]
+  return display.Audio(waveform_short, rate=_SAMPLING_RATE)
 
-# display_audio(pm)
+display_audio(pm)
 
 # type of inst
 print('Number of instruments:', len(pm.instruments))
