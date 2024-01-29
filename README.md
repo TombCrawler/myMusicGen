@@ -8,11 +8,17 @@ Referals<br>
 [TF official documentation for music generation](https://www.tensorflow.org/tutorials/audio/music_generation)<br>
 [Tensorflow tutorials on YouTube](https://www.youtube.com/watch?v=gRRGr_tJnAA&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb&index=8)
 
+Requirements:<br>
+
+[MuseScore](https://musescore.org/en/handbook/4/download-and-installation)
+<br>Please install this app for kthrPiano4
+
 <br>
 The kthrPiano series is the one you want to try.
 <br>It has 1-5 versions.
 When you see the audio output for 2 seconds and hear nothing, it means the model generated/ predicted rest nodes.
-<br>
+ 
+
 <br>1:<br> Honestly, I have no idea what I was trying to do in this version. I think I was trying to generate notes with given 2 notes but I was using the model which predicts the alto part with given soprano part, i.e. a complete mess, ha! 
 <br>
 <br>2:<br>
@@ -48,6 +54,8 @@ It comb through each song to extract the notes of the window size.
 This window has a style which the professor requested however the 495 samples(tunes) are too few to train the model and it does not generate expected results.<br>
 If there are 10,000 and more samples(tunes), I assume the result would be better.<br>
 Like, Shape (16000, window_size, 49) is the ideal shape where 16000 represents number of songs.
+<br>
+<br>Finally you can get a music score after generating a tune, enjoy!
 <br>
 <br>
 5:<br>
